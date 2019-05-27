@@ -1,3 +1,3 @@
 # Explorer
 
-<link>www.countryexplorer.000webhostapp.com</link>
+<link>countryexplorer.000webhostapp.com</link>

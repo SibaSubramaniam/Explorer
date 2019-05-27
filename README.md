@@ -2,4 +2,4 @@
 [Country Explorer](http://countryexplorer.000webhostapp.com)
 
 
-(https://github.com/SibaSubramaniam/Explorer/blob/master/main.png)
+![alt text](https://github.com/SibaSubramaniam/Explorer/blob/master/main.png " Home Page")

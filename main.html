@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="./main.css">
+		<!-- for Nunito Font-->
+		<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+		
+		<title>Explorer</title>
+	</head>
+	<body>
+		
+		<div class='bg'>
+			<!-- -->
+			<!-- For logo to be displayed -->
+			<img class='logo' src="./logo.png"/>
+				<!-- Country search bar-->
+				<input id='country' class="search" placeholder="Search a Country name" required><br>
+				<!-- Country search button-->
+				<input type="button" class="button" onclick="getDetails()" value="  Search Countries  ">
+			
+		</div>
+		<br>
+		<!-- message for search results -->
+		<h3 class='normal' id='note'><h3>
+		<!-- error handling if no country is returned-->
+		<h3 class='error' id='error'>Sorry :( No Countries Found</h3>
+		<!-- div for displaying cardview of flags -->
+		<div id='countryList'></div>
+
+		<script type="text/javascript" src='./main.js'></script>
+		
+	</body>
+</html>
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./country.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxCGvcrikjw8yP6xwOz5yN-IjPS2kl5Gc"></script>
+	<script type="text/javascript" src='./country.js'></script>
+</head>
+<body>
+	<!-- Back Button-->
+	<div id='back' onclick="goBack()" class='previous round'>&#8249; Back</div>
+	<!-- Country Name Display-->
+	<h1 id='countryName'>India</h1>
+	
+	<!-- Country Flag-->
+	<div class='flag'>
+		<img src="" id='countryFlag'>
+	</div>
+	<br>
+
+	<!-- Details about Countries -->
+	<div id='detailsList'>
+
+		<!-- Capital-->
+		<div class='flag'>
+			<div class='middlealign'>
+				<h3>Capital</h3>
+				<h2 id='capital' >-</h2>
+			</div>
+		</div>
+
+		<!-- Population-->
+		<div class='flag'>
+			<div class='middlealign'>
+				<h3>Population</h3>
+				<h2 id='population'>-</h2>
+			</div>
+		</div>
+
+		<!-- Area-->
+		<div class='flag'>
+			<div class='middlealign'>
+				<h3>Area(in sq miles)</h3>
+				<h2 id='area'>-</h2>
+			</div>
+		</div>
+
+		<!-- Language-->
+		<div class='flag'>
+			<div class='middlealign'>
+				<h3>Language</h3>
+				<h2 id='language'>-</h2>
+			</div>
+		</div>
+
+		<!-- Currency-->
+		<div class='flag'>
+			<div class='middlealign'>
+				<h3>Currency</h3>
+				<h2 id='currency'>-</h2>
+			</div>
+		</div>
+
+		<!-- Timezone-->
+		<div class='flag'>
+			<div class='middlealign'>
+				<h3>Time Zone</h3>
+				<h2 id='timezone'>-</h2>
+			</div>
+		</div>
+
+		<!-- Native Name-->
+		<div class='flag'>
+			<div class='middlealign'>
+				<h3>Native Name</h3>
+				<h2 id='nativename'>-</h2>
+			</div>
+		</div>
+
+		<!-- Region-->
+		<div class='flag'>
+			<div class='middlealign'>
+				<h3>Region</h3>
+				<h2 id='subregion'>-</h2>
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- Second part of webpage for additional details-->
+	<div class='secondhalf'>
+
+		<!-- A photo from pixabay about country-->
+		<div class='column'>
+			<img id='countryphoto'>
+		</div>
+
+		<!-- Wikipedia entry about the country-->
+		<div class='column'>
+			<br>
+			<p id='wikidata'></p>
+		</div>
+
+		<!-- Location using google maps -->
+		<div id="map"></div>
+		</br>
+		</br>
+	</div>
+</body>
+</html>

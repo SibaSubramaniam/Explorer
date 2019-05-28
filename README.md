@@ -4,6 +4,12 @@
 
 Note : Please disable extensions
 
+##  Instructions
+
+Run main.html after downloading
+
+
+
 ## Home Page
 ![alt text](https://github.com/SibaSubramaniam/Explorer/blob/master/main.png " Home Page")
 

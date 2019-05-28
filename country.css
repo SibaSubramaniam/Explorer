@@ -186,10 +186,9 @@ html, body {
   }
 
   #wikidata{
-	max-width: 100%;
+  	min-width: 300px;
+	max-width: 90%;
+	margin: auto;
 	}
 
-	.column{
-
-	}
 }

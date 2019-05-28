@@ -5,6 +5,12 @@ function goBack(){
 	window.history.back();
 }
 
+function isEmpty(str) {
+	/*
+	function to check if string is empty
+	*/
+    return (!str || 0 === str.length);
+}
 function getWiki(countryName) {
 	
 	/*
@@ -122,27 +128,26 @@ function populate(){
 	getPhoto(country_name);
 
 	//Populating cards along with error handling
-	if(country_name!=null)
+	if(!isEmpty(country_name))
 		document.getElementById('countryName').innerHTML=country_name;
-	if(countryObj['capital']!=null)
+	if(!isEmpty(countryObj['capital']))
 		document.getElementById('capital').innerHTML=(countryObj['capital']);
-	if(countryObj['population']!=null)
+	if(!isEmpty(countryObj['population']))
 		document.getElementById('population').innerHTML=(countryObj['population']);
-	if(countryObj['area']!=null)
+	if(!isEmpty(countryObj['area']))
 		document.getElementById('area').innerHTML=(countryObj['area']);
-	if(countryObj['languages'][0].name!=null)
+	if(!isEmpty(countryObj['languages'][0].name))
 		document.getElementById('language').innerHTML=(countryObj['languages'][0].name);
-	if(countryObj['flag']!=null)
+	if(!isEmpty(countryObj['flag']))
 		document.getElementById('countryFlag').src=(countryObj['flag']);
-	if(countryObj['currencies'][0].name!=null)
+	if(!isEmpty(countryObj['currencies'][0].name))
 		document.getElementById('currency').innerHTML=(countryObj['currencies'][0].name);
-	if(countryObj['subregion']!=null)
+	if(!isEmpty(countryObj['subregion']))
 		document.getElementById('subregion').innerHTML=(countryObj['subregion']);
-	if(countryObj['nativeName']!=null)
+	if(!isEmpty(countryObj['nativeName']))
 		document.getElementById('nativename').innerHTML=(countryObj['nativeName']);
-	if(countryObj['timezones'][0]!=null)
+	if(!isEmpty(countryObj['timezones'][0]))
 		document.getElementById('timezone').innerHTML=(countryObj['timezones'][0]);
-
 
 	//Create Map view
 	if(countryObj['latlng'][0])

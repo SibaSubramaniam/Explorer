@@ -122,26 +122,27 @@ function populate(){
 	getPhoto(country_name);
 
 	//Populating cards along with error handling
-	if(country_name!='')
+	if(country_name!=null)
 		document.getElementById('countryName').innerHTML=country_name;
-	if(countryObj['capital']!='')
+	if(countryObj['capital']!=null)
 		document.getElementById('capital').innerHTML=(countryObj['capital']);
-	if(countryObj['population']!='')
+	if(countryObj['population']!=null)
 		document.getElementById('population').innerHTML=(countryObj['population']);
-	if(countryObj['area']!='')
+	if(countryObj['area']!=null)
 		document.getElementById('area').innerHTML=(countryObj['area']);
-	if(countryObj['languages'][0].name!='')
+	if(countryObj['languages'][0].name!=null)
 		document.getElementById('language').innerHTML=(countryObj['languages'][0].name);
-	if(countryObj['flag']!='')
+	if(countryObj['flag']!=null)
 		document.getElementById('countryFlag').src=(countryObj['flag']);
-	if(countryObj['currencies'][0].name!='')
+	if(countryObj['currencies'][0].name!=null)
 		document.getElementById('currency').innerHTML=(countryObj['currencies'][0].name);
-	if(countryObj['subregion']!='')
+	if(countryObj['subregion']!=null)
 		document.getElementById('subregion').innerHTML=(countryObj['subregion']);
-	if(countryObj['nativeName']!='')
+	if(countryObj['nativeName']!=null)
 		document.getElementById('nativename').innerHTML=(countryObj['nativeName']);
-	if(countryObj['timezones'][0]!='')
+	if(countryObj['timezones'][0]!=null)
 		document.getElementById('timezone').innerHTML=(countryObj['timezones'][0]);
+
 
 	//Create Map view
 	if(countryObj['latlng'][0])

@@ -15,7 +15,7 @@ div {
 
 }
 
-div img {
+.logo {
 	width: 270px;
 	height: 95px;
 	display: block;
@@ -31,7 +31,6 @@ div img {
 	border-left: 1px solid #d3d3d3;
 	padding: 10px;
 	border-radius: 55px;
-	/*padding-right: 30px;*/
 	font: 16px Product Sans, sans-serif;
 	text-indent:5px;
 }
@@ -40,7 +39,6 @@ div img {
 .search:hover {
 	box-shadow: 0 0 11px rgba(33,33,33,.2); ;
 }
-
 
 /* search countries button */
 .button {
@@ -63,6 +61,7 @@ div img {
 	border: 1px solid #bdbdbd;
 }
 
+
 /* flexBox for countryList that contains cardviews of countries */
 #countryList {
     display: flex;
@@ -75,8 +74,8 @@ div img {
 /*cardview*/
 #countryList .card {
   flex: 1 0 26%; /* explanation below */
-  min-width: 200px;
-  max-width: 400px;
+  min-width: 25%;
+  max-width: 25%;
   transition: 0.5s;
   text-align: center;
   margin: auto;
@@ -96,6 +95,7 @@ div img {
 	transform: scale(1);
 	box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
   }
+
 
 /* for flag image in cardview */
 .card-flag  img{
@@ -128,6 +128,38 @@ div img {
 
 }
 
+/* On screens that are 1000px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1000px) {
+  .search {
+    width: 50%;
+  }
+  .button {
+  	width: 50%
+  }
+  .logo{
+  	width: 30%;
+  }
+  #countryList .card {
+  	min-width: 50%;
+  	max-width: 50%;
+  }
+}
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .search {
+    width: 90%;
+  }
+  .button {
+  	width: 90%
+  }
+  .logo{
+  	width: 50%;
+  }
+  #countryList .card {
+  	min-width: 100%;
+  	max-width: 100%;
+  }
+}
 /* uniformness across multiple browsers */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,

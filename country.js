@@ -53,13 +53,15 @@ function getPhoto(countryName){
 
 		//get url of first image returned by api
 		var imgUrl=data.hits[0].webformatURL;
+		console.log(imgUrl);
 
-		//set image for country
+		//set image for country	
 		document.getElementById('countryphoto').src=imgUrl;
+
 	})
 	.catch(function (error) {
 		//error handling for wikipedia api call
-		document.getElementById('wikidata').innerHTML='Pixabay Error, Check if Internet is working';
+		document.getElementById('countryphoto').src='https://pixabay.com/get/57e6d243425bb108f5d0846096293578153edaed564c704c70267bd5914fc551_640.jpg';
 	
 	});
 }
